@@ -8,7 +8,7 @@ import { RiArrowRightSLine } from 'react-icons/ri'
 const cardData = [
     {
         id: 1,
-        title: 'Living Room Sofa',
+        title: 'Living Room Sofa ',
         description: 'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces, and for people who love a chic design with a sprinkle of vintage design.',
         image: '/images/sofa.jpg', // Replace with actual image path
     },
