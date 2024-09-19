@@ -48,9 +48,9 @@ const Navber = () => {
                 </nav>
                 <div className='flex justify-center items-center min-h-screen text-center px-4'>
                     <div className='max-w-2xl text-white'>
-                        <h3 className='mb-4 font-semibold text-2xl sm:text-3xl md:text-2xl'>Streamline Your Rental Business with Go-Hire.com</h3>
-                        <h1 className='mb-6 text-3xl sm:text-3xl md:text-3xl font-bold'>Connecting Sellers and Customers Globally with Efficient Rental Management.</h1>
-                        <p className='font-semibold text-base sm:text-lg md:text-lg'>
+                        <h3 className='mb-4 font-semibold text-xs sm:text-3xl md:text-2xl'>Streamline Your Rental Business with Go-Hire.com</h3>
+                        <h1 className='mb-6 text-sm sm:text-3xl md:text-3xl font-bold'>Connecting Sellers and Customers Globally with Efficient Rental Management.</h1>
+                        <p className='font-semibold text-xs sm:text-lg md:text-lg'>
                             Lorem ipsum dolor sit amet consectetur. Luctus duis lectus risus augue suspendisse interdum felis. Hac eu nulla quam mauris urna vitae amet elit. Rutrum tortor ut porta magna praesent eget mauris lectus velit. Sed mattis faucibus imperdiet pretium egestas nunc pretium eu condimentum.
                         </p>
                         <Button colorScheme='green' className='mt-5'>Get Started Today</Button>
@@ -61,11 +61,11 @@ const Navber = () => {
                     </div>
                 </div>
 
-                <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-5'>
+                <div className=' grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 pb-5'>
                     <div className=' flex justify-center items-center gap-5'>
                         <div className=' flex gap-5 items-center text-lg font-bold'>
                             <div className=' border p-3 bg-white border-black rounded-full'>
-                                <Image className=' w-8 h-8' src={Accountlogo} alt="" />
+                                <Image className=' sm:w-8 sm:h-8' src={Accountlogo} alt="" />
                             </div>
                             <div className=' text-white flex flex-col'>
                                 <p>1K+</p>
@@ -76,7 +76,7 @@ const Navber = () => {
                     <div className=' flex justify-center items-center gap-5'>
                         <div className=' flex gap-5 items-center text-lg font-bold'>
                             <div className=' border p-3 bg-white border-black rounded-full'>
-                                <Image className=' w-8 h-8' src={Locationlogo} alt="" />
+                                <Image className=' sm:w-8 sm:h-8' src={Locationlogo} alt="" />
                             </div>
                             <div className=' text-white flex flex-col'>
                                 <p>50K+</p>
@@ -87,7 +87,7 @@ const Navber = () => {
                     <div className=' flex justify-center items-center gap-5'>
                         <div className=' flex gap-5 items-center text-lg font-bold'>
                             <div className=' border p-3 bg-white border-black rounded-full'>
-                                <Image className=' w-8 h-8' src={Worldlogo} alt="" />
+                                <Image className=' sm:w-8 sm:h-8' src={Worldlogo} alt="" />
                             </div>
                             <div className=' text-white flex flex-col'>
                                 <p>50K+</p>

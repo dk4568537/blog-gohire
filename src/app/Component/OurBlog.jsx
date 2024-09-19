@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, Heading, Stack, Text } from '@chakra-ui/react'
+import { Button, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import React from 'react'
 import { RiArrowRightSLine } from 'react-icons/ri'
@@ -8,42 +8,42 @@ import { RiArrowRightSLine } from 'react-icons/ri'
 const cardData = [
     {
         id: 1,
-        title: 'Living Room Sofa ',
-        description: 'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces, and for people who love a chic design with a sprinkle of vintage design.',
-        image: '/images/sofa.jpg', // Replace with actual image path
+        title: 'How to Choose the Right Equipment for Your Project',
+        description: 'October 12, 2022No Comments',
+        image: '/images/BlogImgOne.svg', // Replace with actual image path
     },
     {
         id: 2,
-        title: 'Luxury Dining Table',
-        description: 'A beautiful dining table that enhances any dining space with a touch of luxury and sophistication.',
-        image: '/images/dining-table.jpg', // Replace with actual image path
+        title: 'Top 5 Reasons Why Renting is Better Than Buying',
+        description: 'October 12, 2022No Comments',
+        image: '/images/BlogImgTwo.svg', // Replace with actual image path
     },
     {
         id: 3,
-        title: 'Modern Bed Frame',
-        description: 'This modern bed frame adds a stylish and contemporary touch to any bedroom, offering both comfort and design.',
-        image: '/images/bed-frame.jpg', // Replace with actual image path
+        title: 'Maximizing Your Rental Experience',
+        description: 'October 12, 2022No Comments',
+        image: '/images/BlogImgThree.svg', // Replace with actual image path
     },
 ];
 
 const OurBlog = () => {
     return (
-        <div>
-            <div className=' container mx-auto'>
+        <div className=' bg-black text-white'>
+            <div className=' container mx-auto p-5 py-10'>
                 <div>
                     <p className=' text-center bg-green-600 w-14'>BLOG</p>
                     <div className=' flex justify-between items-center'>
                         <div className=' flex justify-center items-center gap-8'>
-                            <h1 className=' font-bold text-3xl'>Our Blog</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                            <h1 className=' font-bold sm:text-3xl'>Our Blog</h1>
+                            <p className=' text-xs sm:text-lg'>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
                         </div>
                         <Button borderRadius={"full"} rightIcon={<RiArrowRightSLine className=' text-lg' />} colorScheme='green' variant='solid'>View All</Button>
                     </div>
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
                     {cardData.map((item) => (
-                        <Card key={item.id} maxW='sm'>
-                            <CardBody>
+                        <div key={item.id} className=' max-w-sm mt-10'>
+                            <div>
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -51,12 +51,12 @@ const OurBlog = () => {
                                     width={400}  // Adjust image size if necessary
                                     height={300} // Adjust image size if necessary
                                 />
-                                <Stack mt='6' spacing='3'>
-                                    <Heading size='md'>{item.title}</Heading>
+                                <div className=' mt-4 space-y-1'>
+                                    <h1 className=' text-2xl font-bold'>{item.title}</h1>
                                     <Text>{item.description}</Text>
-                                </Stack>
-                            </CardBody>
-                        </Card>
+                                </div>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

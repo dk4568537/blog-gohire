@@ -13,7 +13,7 @@ const QuickBooks = () => {
 
   return (
     <div className=' bg-black pb-5'>
-      <div className="flex justify-center items-center gap-14 pb-5 pt-8">
+      <div className="flex justify-center flex-wrap items-center gap-2 sm:gap-14 pb-5 pt-8">
         <Button bgColor={"gray"} color={'white'} onClick={() => handleButtonClick('QuickBooks')}>
           QuickBooks
         </Button>
