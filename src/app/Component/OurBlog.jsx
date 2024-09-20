@@ -18,19 +18,19 @@ const OurBlog = () => {
             id: 1,
             title: 'How to Choose the Right Equipment for Your Project',
             description: `${formattedDate} No Comments`,
-            image: '/images/BlogImgOne.svg', // Replace with actual image path
+            image: '/images/BlogImgOne.jpg', // Replace with actual image path
         },
         {
             id: 2,
             title: 'Top 5 Reasons Why Renting is Better Than Buying',
             description: `${formattedDate} No Comments`,
-            image: '/images/BlogImgTwo.svg', // Replace with actual image path
+            image: '/images/BlogImgTwo.jpg', // Replace with actual image path
         },
         {
             id: 3,
             title: 'Maximizing Your Rental Experience',
             description: `${formattedDate} No Comments`, // Dynamically updated date
-            image: '/images/BlogImgThree.svg', // Replace with actual image path
+            image: '/images/BlogImgThree.jpg', // Replace with actual image path
         },
     ];
 
@@ -50,14 +50,20 @@ const OurBlog = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {cardData.map((item) => (
                         <div key={item.id} className="max-w-sm mt-10">
-                            <div>
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    borderRadius="lg"
-                                    width={400} // Adjust image size if necessary
-                                    height={300} // Adjust image size if necessary
-                                />
+                            <div className='w-full'>
+                                <div className='w-[100%] h-[250px] relative'>
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        // layout='fill'
+                                        fill
+                                        className="rounded-lg"
+                                        // width={400} // Next.js requires width and height to be set
+                                        // height={400} // Same height for consistency
+                                        style={{ objectFit: 'cover' }} // Correct inline style for objectFit
+                                    />
+                                </div>
+
                                 <div className="mt-4 space-y-1">
                                     <h1 className="w-full mb-5 lg:text-2xl font-bold">{item.title}</h1>
                                     <Text>{item.description}</Text>
