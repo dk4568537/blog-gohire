@@ -34,7 +34,7 @@ const JoinCommunity = () => {
                                 cursor="pointer"
                                 border={"none"}
                             >
-                                Join Now
+                                Search Now
                             </InputRightAddon>
                         </InputGroup>
                     </div>

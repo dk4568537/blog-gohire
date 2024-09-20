@@ -32,22 +32,22 @@ const QuickBooks = () => {
       <div className="w-full py-5">
         {activeContent === 'QuickBooks' && (
           <div>
-            <Image className=' h-[600px] w-full' src={videoimg} alt="" />
+            <Image className=' sm:h-[600px] w-full' src={videoimg} alt="" />
           </div>
         )}
         {activeContent === 'Chat' && (
           <div>
-            <Image className=' h-[600px] w-full' src={videoimg} alt="" />
+            <Image className=' sm:h-[600px] w-full' src={videoimg} alt="" />
           </div>
         )}
         {activeContent === 'Product' && (
           <div>
-            <Image className=' h-[600px] w-full' src={videoimg} alt="" />
+            <Image className=' sm:h-[600px] w-full' src={videoimg} alt="" />
           </div>
         )}
         {activeContent === 'Vendor Registration' && (
           <div>
-            <Image className=' h-[600px] w-full' src={videoimg} alt="" />
+            <Image className=' sm:h-[600px] w-full' src={videoimg} alt="" />
           </div>
         )}
       </div>

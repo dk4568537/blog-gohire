@@ -38,14 +38,14 @@ const contentData = [
 const Futures = () => {
     return (
         <div className=' bg-black'>
-        <div className='container mx-auto py-10 px-5'>
+        <div className='container mx-auto sm:py-10 px-5'>
             {/* Title Section */}
             <div className='flex justify-center items-center flex-col text-center'>
                 <p className='text-green-500 text-xl pb-2 sm:text-2xl'>Futures</p>
-                <h1 className='w-full text-white text-2xl sm:text-4xl mb-4 font-bold'>
+                <h1 className='w-full text-white sm:text-4xl mb-4 font-bold'>
                 Access the Best Rental Services Anywhere, Anytime
                 </h1>
-                <p className='w-full text-white sm:w-[550px] text-base sm:text-lg'>
+                <p className='w-full text-white sm:w-[550px] text-xs sm:text-lg'>
                 Rent Hire Go offers cutting-edge solutions for both sellers and customers, making rental transactions easy, secure, and efficient.
                 </p>
             </div>
@@ -57,8 +57,8 @@ const Futures = () => {
                         key={item.id}
                         className='flex bg-gray-950 rounded-lg text-white justify-center items-center flex-col text-center px-5 pt-5'
                     >
-                        <h1 className='text-lg sm:text-xl font-bold mb-4'>{item.title}</h1>
-                        <p className='w-full sm:w-[480px] mb-4'>{item.description}</p>
+                        <h1 className='text-md sm:text-xl font-bold mb-4'>{item.title}</h1>
+                        <p className='w-full text-xs sm:text-base lg:w-[480px] mb-4'>{item.description}</p>
                         <Button
                             rightIcon={<RiArrowRightSLine className='text-xl' />}
                             className='mb-4'
