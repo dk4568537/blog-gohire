@@ -26,7 +26,7 @@ const QuickBooks = () => {
   };
 
   // Conditionally set width based on scrollValue and apply smooth transition
-  const imageWidthClass = scrollValue >= 800 ? `w-[650px]` : scrollValue >= 620  ?'w-[780px]': scrollValue >= 520  ?'w-[900px]': 'w-full';
+  const imageWidthClass = scrollValue >= 700 ? `w-[700px]` : scrollValue >= 620  ?'w-[780px]': scrollValue >= 520  ?'w-[900px]': 'w-full';
 
 
   return (
@@ -50,11 +50,11 @@ const QuickBooks = () => {
       </div>
 
       {/* Conditionally render content based on active button */}
-      <div className="w-full py-5">
+      <div className="w-full container mx-auto pb-5">
         {activeContent == "QuickBooks" && (
           <div className=' flex justify-center items-center'>
             <Image
-              className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 
+              className={` ${imageWidthClass} transition-all ease-in-out duration-700`} 
               src={videoimg} 
               alt="" 
             />
@@ -63,7 +63,7 @@ const QuickBooks = () => {
         {activeContent == "Chat" && (
           <div className=' flex justify-center items-center'>
             <Image
-              className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 
+              className={` ${imageWidthClass} transition-all ease-in-out duration-700`} 
               src={videoimg} 
               alt="" 
             />
@@ -72,7 +72,7 @@ const QuickBooks = () => {
         {activeContent == "Product" && (
           <div className=' flex justify-center items-center'>
             <Image
-              className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 
+              className={` ${imageWidthClass} transition-all ease-in-out duration-700`} 
               src={videoimg} 
               alt="" 
             />
@@ -81,7 +81,7 @@ const QuickBooks = () => {
         {activeContent == "Vendor Registration" && (
           <div className=' flex justify-center items-center'>
             <Image
-              className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 
+              className={` ${imageWidthClass} transition-all ease-in-out duration-700`} 
               src={videoimg} 
               alt="" 
             />
@@ -90,7 +90,7 @@ const QuickBooks = () => {
         {activeContent == "Xero" && (
           <div className=' flex justify-center items-center'>
             <Image
-              className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 
+              className={` ${imageWidthClass} transition-all ease-in-out duration-700`} 
               src={videoimg} 
               alt="" 
             />
