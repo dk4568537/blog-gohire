@@ -87,7 +87,7 @@ const QuickBooks = () => {
             />
           </div>
         )}
-        {activeContent == " Xero" && (
+        {activeContent == "Xero" && (
           <div className=' flex justify-center items-center'>
             <Image
               className={`sm:h-[600px] ${imageWidthClass} transition-all ease-in-out duration-700`} 

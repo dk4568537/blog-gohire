@@ -7,7 +7,7 @@ import Locationlogo from "../../../public/images/Locationlogo.svg";
 import Worldlogo from "../../../public/images/Worldlogo.svg";
 const Bgssimg = "/images/Dashboard-bg.png";
 import Image from "next/image";
-import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Button, IconButton, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { HiChevronDown } from "react-icons/hi";
 import { FaUser } from "react-icons/fa";
 
@@ -18,8 +18,8 @@ const Navber = () => {
         className="w-[100%] h-full bg-cover bg-center"
         style={{ backgroundImage: `url(${Bgssimg})` }}
       >
-        <nav className="border-gray-200 dark:bg-gray-900">
-          <div className="w-full sm:max-w-screen-xl flex items-center justify-end sm:gap-[55px] md:gap-[338px] mx-auto p-4">
+        <nav className="border-gray-200">
+          <div className="w-full sm:max-w-screen-xl flex items-center justify-end sm:gap-[55px] md:gap-[315px] mx-auto p-4">
             <div className="md:hidden">
               <Image src={Navlogo} className="h-[58.56px] w-[73.5px]" alt="Rent Hire Logo" />
             </div>
@@ -27,7 +27,7 @@ const Navber = () => {
             <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
               <button
                 type="button"
-                className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-xs sm:text-sm px-5 py-2.5 text-center"
+                className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-xs sm:text-sm px-5 py-2.5 text-center"
               >
                 Get Started
               </button>
@@ -51,7 +51,13 @@ const Navber = () => {
                 </MenuList>
               </Menu>
               <p className="flex justify-center items-center text-center text-white">
-                <FaUser />
+                <IconButton
+                  colorScheme="white"
+                  variant="ghost"
+                  border={"none"}
+                  color={"white"}
+                  icon={<FaUser />}
+                />
               </p>
             </div>
 
@@ -62,7 +68,7 @@ const Navber = () => {
         </nav>
 
         <div className="flex justify-center items-center">
-          <ul className="flex md:flex-row font-medium bg-black md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex md:flex-row font-medium  md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
             <li>
               <Link
                 href="#"
@@ -75,7 +81,7 @@ const Navber = () => {
             <li>
               <Link
                 href="#"
-                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:bg-green-500 md:hover:bg-transparent md:hover:text-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 Product
               </Link>
@@ -83,7 +89,7 @@ const Navber = () => {
             <li>
               <Link
                 href="#"
-                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:bg-green-500 md:hover:bg-transparent md:hover:text-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 About us
               </Link>
@@ -109,7 +115,7 @@ const Navber = () => {
             </p>
             <button
               type="button"
-              className="text-white bg-gradient-to-r mt-5 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              className="text-white bg-gradient-to-r mt-5 from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               Get Started
             </button>

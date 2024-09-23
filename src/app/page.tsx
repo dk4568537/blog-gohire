@@ -7,7 +7,9 @@ import Frequency from '@/app/Component/Frequency'
 import JoinCommunity from '@/app/Component/JoinCommunity'
 import Footer from '@/app/Component/Footer'
 
-
+export const metadata={
+  title:"Renttix"
+}
 
 const page = () => {
   return (
