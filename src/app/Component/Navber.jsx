@@ -68,7 +68,7 @@ const Navber = () => {
         </nav>
 
         <div className="flex justify-center items-center">
-          <ul className="flex md:flex-row font-medium  md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
+          <ul className="flex md:flex-row font-medium md:space-x-8 md:mt-0 md:border-0">
             <li>
               <Link
                 href="#"
@@ -81,7 +81,7 @@ const Navber = () => {
             <li>
               <Link
                 href="#"
-                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:text-green-500"
               >
                 Product
               </Link>
@@ -89,7 +89,7 @@ const Navber = () => {
             <li>
               <Link
                 href="#"
-                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                className="block text-lg font-semibold py-2 px-3 md:p-0 text-white rounded hover:text-green-500 md:hover:bg-transparent md:hover:text-green-500 dark:text-white dark:hover:text-green-500"
               >
                 About us
               </Link>
